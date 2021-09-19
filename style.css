@@ -1,0 +1,168 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  background-color: #e5e9f0;
+  font-family: "Nunito", sans-serif;
+  color: #4c566a;
+}
+@font-face {
+  font-family: profont;
+  src: url("./fonts/profont.ttf");
+}
+.nf {
+  font-family: "profont";
+}
+.dark {
+  color: #eceff4;
+}
+.icons {
+  font-size: 3em;
+  font-weight: lighter;
+}
+a {
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+a:visited {
+  color: #4c566a;
+}
+@media (min-width: 56.25em) {
+  #header {
+    grid-template-columns: 1fr 1fr;
+    gap: 8em 2em;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+  #about-me {
+    text-align: start !important;
+  }
+  .header_svg {
+    width: 100%;
+    order: 1;
+  }
+  #tech {
+    grid-template-areas:
+      "pic text"
+      "pic icons" !important;
+    justify-items: normal !important;
+  }
+  #works {
+    align-items: center;
+    grid-template-areas:
+      "pic text"
+      "pic content" !important;
+  }
+  #contact-me {
+    text-align: start !important;
+  }
+}
+
+#container1 {
+  padding: 2.5em 2.5em !important;
+  background-color: #5e81ac;
+}
+#header {
+  display: grid;
+  justify-items: center;
+}
+@media (min-width: 30em) {
+  #header_svg {
+    width: 80% !important;
+  }
+  #works-pic {
+    width: 100% !important;
+  }
+}
+#header_svg {
+  width: 100%;
+  order: 0;
+}
+#title {
+  font-size: 4em;
+  color: #e5e9f0;
+}
+#about-me {
+  direction: rtl;
+  padding: 40px !important;
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+  text-align: center;
+}
+#tech {
+  padding: 40px !important;
+  grid-gap: 30px !important;
+  direction: rtl;
+  display: grid;
+  background-color: #2e3440;
+  grid-template-areas:
+    "text"
+    "pic"
+    "icons";
+  justify-items: center;
+  align-items: center;
+}
+#tech-text {
+  grid-area: text;
+}
+#tech-pic {
+  min-width: 300px;
+  grid-area: pic;
+  width: 25%;
+}
+ul {
+  list-style: none;
+}
+#icons {
+  width: 100%;
+  grid-gap: 5px;
+  padding: 0;
+  grid-area: icons;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+#works {
+  padding: 40px !important;
+  display: grid;
+  justify-items: center;
+  align-items: flex-start;
+  grid-template-areas:
+    "text"
+    "pic"
+    "content";
+}
+#cardlist {
+  grid-area: content;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.card {
+  margin: 15px !important;
+  display: inline-block;
+  width: 300px;
+  height: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+#works-pic {
+  grid-area: pic;
+  width: 40% !important;
+  padding: 20px !important;
+  padding-top: 50px !important;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px !important;
+}
+#contact-me {
+  background-color: #2e3440;
+  padding: 40px !important;
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+  text-align: center !important;
+}
