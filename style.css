@@ -178,3 +178,16 @@ ul {
   padding-right: 10% !important;
   text-align: center !important;
 }
+#code {
+  animation: turn 1s linear infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes turn {
+  from {
+    transform: rotateZ(-15deg);
+  }
+  to {
+    transform: rotateZ(15deg);
+  }
+}
